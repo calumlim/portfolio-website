@@ -1,4 +1,4 @@
 # dashboard-portfolio
 
--Resources-\n
+-Resources-<br />
 Icons: https://material.io/resources/icons/?style=outline
