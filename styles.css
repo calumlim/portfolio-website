@@ -1,0 +1,16 @@
+.page-container {
+    background: transparent linear-gradient(241deg, #FF5757 0%, #BD63FF 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.dashboard-container {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border-radius: 37px;
+    opacity: 1;
+}
