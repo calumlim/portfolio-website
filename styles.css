@@ -16,7 +16,6 @@
 }
 
 .left-column-container {
-    height: 100%;
     margin: 60px 0px 0px 24px;
 }
 
@@ -26,7 +25,6 @@
 }
 
 .company-name {
-    text-align: center;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -35,18 +33,18 @@
 }
 
 #side-nav-bar {
-    margin-left: 20px;
     margin-top: 80px;
 }
 
 #side-nav-bar ul{
+    list-style-type: none;
+    list-style-position: inside;
     margin: 0;
     padding: 0;
 }
 
 #side-nav-bar li{
     list-style: none;
-    padding-left: 64px;
     margin-top: 48px;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
@@ -54,38 +52,33 @@
     color: #707070;
 }
 
-.nav-icon-01 {
-    background-image: url("images/navbar_icons/01-dashboard-icon.png");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
+#side-nav-bar img{
+    position: absolute;
 }
 
-.nav-icon-02 {
-    background-image: url("images/navbar_icons/02-issues-icon.png");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
+.category-text-container {
+    width: 70px;
+    text-align: left;
+    margin: 0 auto;
+    white-space: nowrap;
 }
 
-.nav-icon-03 {
-    background-image: url("images/navbar_icons/03-resources-icon.png");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
+@media only screen and (max-width: 991px) {
+    .left-column-container {
+        margin: 0;
+    }
+
+    #side-nav-bar img{
+        margin-left: 20%;
+    }
 }
 
-.nav-icon-04 {
-    background-image: url("images/navbar_icons/04-learning-planning-icon.png");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-}
+@media only screen and (min-width: 992px) {
+    .navbar-hide {
+        display: none;
+    }
 
-.nav-icon-05 {
-    background-image: url("images/navbar_icons/05-chat-icon.png");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-}
-
-.nav-icon-06 {
-    background-image: url("images/navbar_icons/06-settings-icon.png");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
+    #side-nav-bar img{
+        margin-left: 10%;
+    }
 }
