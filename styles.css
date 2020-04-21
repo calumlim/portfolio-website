@@ -42,7 +42,7 @@
     color: #707070;
 }
 
-#side-nav-bar img{
+#side-nav-bar img {
     position: absolute;
 }
 
@@ -65,13 +65,17 @@
     .text-display {
         display: none;
     }
+
+    #side-nav-bar {
+        text-align: center;
+    }
     
     .left-column-container {
         margin-bottom: 24px;
     }
-
+    
     #side-nav-bar img{
-        margin-left: 30%;
+        margin-left: -100px;
     }
 }
 
