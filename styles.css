@@ -65,7 +65,7 @@
 
 @media only screen and (max-width: 991px) {
     .left-column-container {
-        margin: 0;
+        margin: 16px 0 16px 0;
     }
 
     #side-nav-bar img{
