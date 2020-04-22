@@ -1,0 +1,44 @@
+.header-container {
+    display: table;
+    width: 100%;
+}
+
+.header-container span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dashboard-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: black;
+}
+
+.date-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: #707070;
+}
+
+.search-container {
+    height: 52px;
+    width: 52px;
+    background: #F7EBFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .middle-column-container {
+        margin: 16px 16px 0 16px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .middle-column-container {
+        margin-top: 60px;
+    }
+}
