@@ -57,16 +57,27 @@
     color: #707070;
 }
 
-.progress-bar-container {
-    height: 10px;
-    background: white;
-    border-radius: 10px;
-    margin: 0px 28px 0 28px;
+.last-class-progress-bar {
+    background-color: white !important;
+    margin: 0 28px;
 }
 
-#lastClassProgressBar {
+.progress-bar-container {
+    height: 10px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+}
+
+.progress-bar-fill {
     height: 100%;
     background-color: #BD63FF;
+    border-radius: 10px;
+}
+
+.progress-bar-fill-2 {
+    height: 100%;
+    background-color: #FF5757;
+    border-radius: 10px;
 }
 
 .percentage-font {
@@ -83,9 +94,77 @@
     margin-top: -31px;
 }
 
+.middle-bottom-half-container {
+    margin-top: 24px;
+}
+
+.classes-info-container {
+    padding: 0;
+}
+
+.hours-info-container {
+    padding: 0;
+    text-align: center;
+}
+
+.info-title-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+
+.more-classes-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #707070;
+    text-align: right;
+}
+
+.class-info {
+    display: table;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.unit-name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    display: table-cell;
+    width: 50%;
+}
+
+.unit-progress-bar {
+    display: table-cell;
+    width: 35%;
+}
+
+.unit-progress-percentage {
+    display: table-cell;
+    width: 15%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #707070;
+}
+
+
+
 @media only screen and (max-width: 991px) {
     .middle-column-container {
         margin: 16px 16px 0 16px;
+    }
+
+    .classes-info-container {
+        padding: 0 8px;
+    }
+    
+    .hours-info-container {
+        padding: 0 8px;
     }
 }
 
