@@ -32,6 +32,23 @@ const user = {
         Wednesday: 8,
         Thursday: 6,
         Friday: 10,
+    },
+    topicProgress: {
+        1: {
+            title: "Python",
+            level: "Advanced",
+            progress: "75%",
+        },
+        2: {
+            title: "Laravel",
+            level: "Intermediate",
+            progress: "50%",
+        },
+        3: {
+            title: "HTML",
+            level: "Beginner",
+            progress: "20%",
+        },
     }
 }
 
@@ -105,6 +122,32 @@ function fillProfileInfo() {
     $("#profileTitle").html(user.title)
 }
 
+function fillTopicList() {
+    const keys = Object.keys(user.topicProgress)
+    keys.forEach((id) => {
+        $("#topicList").append(createTopicRow(id))
+    })
+}
+
+function createTopicRow(id) {
+    topic = user.topicProgress[id]
+    return (
+        `
+        <div class="topic-info">
+            <p class="topic-title">${topic.title}</p>
+            <p class="topic-level">${topic.level}</p>
+            <div class="completion-font">
+                <p style="float:left">Course-completion:</p>
+                <p style="float:right">${topic.progress}</p>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width:${topic.progress}"></div>
+            </div>
+        </div>
+        `
+    )
+}
+
 $( document ).ready(function() {
     if ($(window).width() >= 992) {
         $('#collapseContainer').removeClass('collapse')
@@ -123,4 +166,5 @@ $( document ).ready(function() {
     fillClassesList()
     drawHoursSpentChart()
     fillProfileInfo()
+    fillTopicList()
 })
