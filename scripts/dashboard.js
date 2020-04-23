@@ -154,7 +154,7 @@ $( document ).ready(function() {
     }
 
     $(window).resize(function() {
-        if ($(window).width() >= 992) {
+        if (window.innerWidth >= 992) {
             $('#collapseContainer').removeClass('collapse')
         }
         else {
