@@ -1,5 +1,5 @@
-.right-column-container {
-    margin-top: 60px;
+.logout-container{
+    text-align: center;
 }
 
 .logout-font {
@@ -7,4 +7,44 @@
     font-weight: 700;
     font-size: 15px;
     color: #707070;
+    width: 50%;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-name-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.profile-title-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #707070;
+    margin-top: -18px;
+}
+
+@media only screen and (max-width: 991px) {
+    .right-column-container {
+        margin: 16px 16px 0 16px;
+    }
+
+    .classes-info-container {
+        padding: 0 8px;
+    }
+    
+    .hours-info-container {
+        padding: 0 8px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .right-column-container {
+        margin-top: 60px;
+    }
 }

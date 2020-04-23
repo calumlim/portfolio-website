@@ -23,7 +23,8 @@ const classes = {
 
 const user = {
     id: 1,
-    name: "Punk",
+    name: "Julian Lee",
+    title: "Developer",
     lastClass: "FIT2014",
     hoursStudying: {
         Monday: 2,
@@ -99,6 +100,11 @@ function drawHoursSpentChart() {
     })
 }
 
+function fillProfileInfo() {
+    $("#profileName").html(user.name)
+    $("#profileTitle").html(user.title)
+}
+
 $( document ).ready(function() {
     if ($(window).width() >= 992) {
         $('#collapseContainer').removeClass('collapse')
@@ -116,4 +122,5 @@ $( document ).ready(function() {
     fillWelcomeBackContainer()
     fillClassesList()
     drawHoursSpentChart()
+    fillProfileInfo()
 })
