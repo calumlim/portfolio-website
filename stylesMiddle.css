@@ -1,6 +1,7 @@
 .header-container {
     display: table;
     width: 100%;
+    height: 52px;
 }
 
 .header-container span {
