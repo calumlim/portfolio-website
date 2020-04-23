@@ -152,7 +152,9 @@
     color: #707070;
 }
 
-
+.chart-container {
+    height: 100%;
+}
 
 @media only screen and (max-width: 991px) {
     .middle-column-container {

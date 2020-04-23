@@ -25,11 +25,33 @@ const user = {
     id: 1,
     name: "Punk",
     lastClass: "FIT2014",
+    hoursStudying: {
+        Monday: 2,
+        Tuesday: 4,
+        Wednesday: 8,
+        Thursday: 6,
+        Friday: 10,
+    }
+}
+
+function fillWelcomeBackContainer() {
+    $("#welcomeBack").html("Welcome back, " + user.name + "!")
+    lastClass = classes[user.lastClass]
+    $("#lastClassUnit").html(user.lastClass + " - " + lastClass.title)
+    $("#lastClassProgressBar").css("width", lastClass.progress + "%")
+    $("#progressPercentage").html(lastClass.progress + "%")
+}
+
+function fillClassesList() {
+    const keys = Object.keys(classes)
+    keys.forEach((unitName) => {
+        $("#classList").append(createClassRow(unitName))
+    })
 }
 
 function createClassRow(unitName) {
-    title = classes[unitName].title
-    progress = classes[unitName].progress + "%"
+    const title = classes[unitName].title
+    const progress = classes[unitName].progress + "%"
     return (
         `<div class="class-info">
             <div class="unit-name">
@@ -45,18 +67,35 @@ function createClassRow(unitName) {
     )
 }
 
-function fillWelcomeBackContainer(user, classes) {
-    $("#welcomeBack").html("Welcome back, " + user.name + "!")
-    lastClass = classes[user.lastClass]
-    $("#lastClassUnit").html(user.lastClass + " - " + lastClass.title)
-    $("#lastClassProgressBar").css("width", lastClass.progress + "%")
-    $("#progressPercentage").html(lastClass.progress + "%")
-}
+function drawHoursSpentChart() {
+    let data = {
+        labels: Object.keys(user.hoursStudying),
+        datasets: [
+            {
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: Object.values(user.hoursStudying)
+            }
+        ]
+    }
 
-function fillClassesList(classes) {
-    const keys = Object.keys(classes)
-    keys.forEach((unitName) => {
-        $("#classList").append(createClassRow(unitName))
+    const chartContainerHeight = $('#myChart').closest('.chart-container').height()
+    const chartContainerWidth = $('#myChart').closest('.chart-container').width()
+    $("#myChart").css("height", chartContainerHeight)
+    $("#myChart").css("width", chartContainerWidth)
+    
+    let ctx = $("#myChart").get(0).getContext("2d");
+    let myLineChart = new Chart(ctx, {
+        type: "line",
+        data: data,
+        options: {  
+            responsive: false,
+            maintainAspectRatio: false
+        }
     })
 }
 
@@ -74,6 +113,7 @@ $( document ).ready(function() {
         }
     });
 
-    fillWelcomeBackContainer(user, classes)
-    fillClassesList(classes)
+    fillWelcomeBackContainer()
+    fillClassesList()
+    drawHoursSpentChart()
 })
