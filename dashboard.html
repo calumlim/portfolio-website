@@ -12,63 +12,98 @@
 
 <body>
     <div class="page-container">
-        
         <div class="dashboard-container">
-            <div class="row">
+
+            <div class="row no-gutters top-navbar">
+                <div class="col-4 align-self-center">
+                    <button class="open-left-col-button" onclick="openLeftColumnSidebar()">☰</button>
+                </div>
+                <div class="col-4 align-self-center center-align">
+                    <a class=" navbar-company-title" href="#">Learny</a>
+                </div>
+                <div class="col-4 align-self-center right-align">
+                    <button class="open-left-col-button" onclick="openLeftColumnSidebar()">Profile</button>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
 
                 <!-- LEFT COLUMN -->
-                <div class="col-12 col-lg-3">
-                    <div class="left-column-container collapse" id="collapseContainer">
-                        <img class="icon" src="images/udemy_icon.png" alt="Icon Here">
-                        <p class="text-display company-font category-text-container">Learny</p>
-                        <div id="side-nav-bar">
-                            <ul>
-                                <li>
-                                    <img src="images/navbar_icons/01-dashboard-icon.png">
-                                    <div class="category-text-container">
-                                        Dashboard
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="images/navbar_icons/02-issues-icon.png">
-                                    <div class="category-text-container">
-                                        Classes
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="images/navbar_icons/03-resources-icon.png">
-                                    <div class="category-text-container">
-                                        Resources
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="images/navbar_icons/04-learning-planning-icon.png">
-                                    <div class="category-text-container">
-                                        Learning Plan
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="images/navbar_icons/05-chat-icon.png">
-                                    <div class="category-text-container">
-                                        Chat
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="images/navbar_icons/06-settings-icon.png">
-                                    <div class="category-text-container">
-                                        Settings
-                                    </div>
-                                </li>
-                            </ul>
+                <div class="col-12 col-lg-3 left-column-outer">
+                    <div id="leftColumn" class="left-column-container">
+
+                        <div class="close-button-container">
+                            <a href="javascript:void(0)" class="close-button" onclick="closeLeftColumnSidebar()">×</a>
                         </div>
+
+                        <div class="row no gutters">
+                            <div class="col-11 center-align">
+                                <img class="icon" src="images/udemy_icon.png" alt="Icon Here">
+                            </div>
+                        </div>
+
+                        <div class="row no gutters">
+                            <div class="col-11 center-align">
+                                <p class="company-font">Learny</p>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters category-container">
+                            <div class="col-4 category-icon-container">
+                                <img src="images/navbar_icons/01-dashboard-icon.png">
+                            </div>
+                            <div class="category-text-container col-8">
+                                <a href="#">Dashboard</a>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters category-container">
+                            <div class="col-4 category-icon-container">
+                                <img src="images/navbar_icons/02-issues-icon.png">
+                            </div>
+                            <div class="category-text-container col-8">
+                                <a href="#">Classes</a>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters category-container">
+                            <div class="col-4 category-icon-container">
+                                <img src="images/navbar_icons/03-resources-icon.png">
+                            </div>
+                            <div class="category-text-container col-8">
+                                <a href="#">Resources</a>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters category-container">
+                            <div class="col-4 category-icon-container">
+                                <img src="images/navbar_icons/04-learning-planning-icon.png">
+                            </div>
+                            <div class="category-text-container col-8">
+                                <a href="#">Learning Plan</a>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters category-container">
+                            <div class="col-4 category-icon-container">
+                                <img src="images/navbar_icons/05-chat-icon.png">
+                            </div>
+                            <div class="category-text-container col-8">
+                                <a href="#">Chat</a>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters category-container">
+                            <div class="col-4 category-icon-container">
+                                <img src="images/navbar_icons/06-settings-icon.png">
+                            </div>
+                            <div class="category-text-container col-8">
+                                <a href="#">Settings</a>
+                            </div>
+                        </div>
+
                     </div>
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-hide">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseContainer" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand company-font company-font-padding" href="#">Learny</a>>
-                        </nav>    
-                    </div>
+                </div>
 
                 <!-- MIDDLE COLUMN -->
                 <div class="col-12 col-lg-6">
@@ -99,7 +134,7 @@
                             </tr>
                         </table>
 
-                        <div class="middle-bottom-half-container row">
+                        <div class="middle-bottom-half-container row no-gutters">
 
                             <div class="col-12 col-sm-6 classes-info-container">
                                 <span class="info-title-font">Classes</span>

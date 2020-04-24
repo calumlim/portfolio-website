@@ -14,84 +14,128 @@
     border-radius: 36px;
 }
 
-.icon {
-    display: block;
-    margin: 0 auto;
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
 }
 
 .company-font {
+    text-align: center;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: black;
 }
 
-#side-nav-bar ul{
-    list-style-type: none;
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
+.category-container {
+    margin-top: 48px;
 }
 
-#side-nav-bar li{
-    margin-top: 40px;
+.category-icon-container {
+    text-align: center;
+}
+
+.category-text-container {
+    text-align: left;
+}
+
+.category-text-container a {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #707070;
-}
-
-#side-nav-bar img {
-    position: absolute;
-}
-
-.category-text-container {
-    width: 70px;
-    text-align: left;
-    margin: 0 auto;
     white-space: nowrap;
+    transition: .3s;
 }
 
-.company-font-padding {
-    margin-left: -32px;
+.category-text-container a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 @media only screen and (max-width: 991px) {
-    .icon {
-        display: none;
-    }
-
-    .text-display {
-        display: none;
-    }
-
-    #side-nav-bar {
-        text-align: center;
+    .left-column-outer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        width: 0;
+        transition: width 1s;
     }
     
     .left-column-container {
-        margin-bottom: 24px;
+        height: 100%;
+        width: 280px;
+        position: absolute;
+        z-index: 1;
+        background-color: #343A40;
+        border-bottom-left-radius: 36px;
+    }
+
+    .top-navbar {
+        height: 56px;
+        background-color: #343A40; 
     }
     
-    #side-nav-bar img{
-        margin-left: -100px;
+    .open-left-col-button {
+        font-size: 20px;
+        background-color: #343A40;
+        color: white;
+        padding: 3px 13px;
+        border: 1px solid white;
+        transition-duration: 0.4s;
+        margin-left: 20px;
+    }
+    
+    .open-left-col-button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .close-button-container {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .close-button {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        color: #707070;
+        transition: 0.3s;
+    }
+
+    .close-button:hover {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar-company-title {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+    }
+
+    .company-font {
+        color: white;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .left-column-container {
-        margin: 60px 0px 0px 24px;
-    }
-    
-    #side-nav-bar {
-        margin-top: 60px;
-    }
-
-    .navbar-hide {
+    .top-navbar {
         display: none;
     }
 
-    #side-nav-bar img{
-        margin-left: 10%;
+    .close-button {
+        display: none;
+    }
+
+    .left-column-container {
+        margin-top: 60px;
     }
 }

@@ -148,6 +148,16 @@ function createTopicRow(id) {
     )
 }
 
+function openLeftColumnSidebar() {
+    console.log("hi")
+    $('.left-column-outer').css("width", "280px")
+}
+
+function closeLeftColumnSidebar() {
+    console.log("hi")
+    $('.left-column-outer').css("width", "0")
+}
+
 $( document ).ready(function() {
     if ($(window).width() >= 992) {
         $('#collapseContainer').removeClass('collapse')
