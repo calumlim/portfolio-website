@@ -86,33 +86,74 @@ function createClassRow(unitName) {
 }
 
 function drawHoursSpentChart() {
-    let data = {
-        labels: Object.keys(user.hoursStudying),
-        datasets: [
-            {
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: Object.values(user.hoursStudying)
-            }
-        ]
-    }
-
     const chartContainerHeight = $('#myChart').closest('.chart-container').height()
     const chartContainerWidth = $('#myChart').closest('.chart-container').width()
     $("#myChart").css("height", chartContainerHeight)
     $("#myChart").css("width", chartContainerWidth)
     
     let ctx = $("#myChart").get(0).getContext("2d");
+    let gradientFill = ctx.createLinearGradient(0, 0, 250, 500);
+    gradientFill.addColorStop(0, "#9300FF");
+    gradientFill.addColorStop(1, "#CA88FC5D");
+
+    let data = {
+        labels: Object.keys(user.hoursStudying),
+        datasets: [
+            {
+                label: 'Hours per day',
+                fill: true,
+                backgroundColor: gradientFill,
+                borderColor: '#9300FF',
+                pointRadius: 0,
+                data: Object.values(user.hoursStudying)
+            }
+        ]
+    }
+
     let myLineChart = new Chart(ctx, {
         type: "line",
         data: data,
         options: {  
-            responsive: false,
-            maintainAspectRatio: false
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: {
+                display: false,
+            },
+            elements: {
+                line: {
+                    tension: 0.4
+                },
+            },
+            animation: {
+                easing: 'easeInOutQuad',
+                duration: 800,
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false,
+                    },
+                    ticks: {
+                        fontFamily: 'Nunito',
+                        fontSize: 12,
+                        fontColor: '#707070',
+                    },
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display: true,
+                        color: '#E8E8E8',
+                        lineWidth: 1
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        stepSize: 2,
+                        fontFamily: 'Nunito',
+                        fontSize: 12,
+                        fontColor: '#707070',
+                    }
+                }]
+            },
         }
     })
 }
