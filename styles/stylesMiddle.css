@@ -159,7 +159,7 @@
     margin-top: 10%;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
     .middle-column-container {
         margin: 16px 16px 0 16px;
     }
@@ -173,7 +173,7 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .middle-column-container {
         margin-top: 60px;
     }

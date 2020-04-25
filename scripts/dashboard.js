@@ -200,19 +200,6 @@ function closeLeftColumnSidebar() {
 }
 
 $( document ).ready(function() {
-    if ($(window).width() >= 992) {
-        $('#collapseContainer').removeClass('collapse')
-    }
-
-    $(window).resize(function() {
-        if (window.innerWidth >= 992) {
-            $('#collapseContainer').removeClass('collapse')
-        }
-        else {
-            $('#collapseContainer').addClass('collapse')
-        }
-    });
-
     fillWelcomeBackContainer()
     fillClassesList()
     drawHoursSpentChart()

@@ -51,7 +51,7 @@
     transition: .3s;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
     .left-column-outer {
         height: 100%;
         position: absolute;
@@ -126,7 +126,7 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .top-navbar {
         display: none;
     }
