@@ -190,15 +190,19 @@ function createTopicRow(id) {
 }
 
 function openLeftColumnSidebar() {
-    $('.left-column-outer').css("width", "280px")
+    $(".left-column-outer").css("width", "280px")
 }
 
 function closeLeftColumnSidebar() {
-    $('.left-column-outer').css("width", "0")
+    $(".left-column-outer").css("width", "0")
 }
 
 function openRightColumnSidebar() {
-    $('.left-column-outer').css("width", "280px")
+    $('.right-column-outer').css("width", "280px")
+}
+
+function closeRightColumnSidebar() {
+    $('.right-column-outer').css("width", "0")
 }
 
 $( document ).ready(function() {

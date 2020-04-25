@@ -58,16 +58,50 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    .right-column-container {
-        margin: 16px 16px 0 16px;
+    .right-column-outer {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        width: 0;
+        transition: width 1s;
     }
 
-    .classes-info-container {
-        padding: 0 8px;
+    .right-column-container {
+        left: 100%;
+        transform: translateX(-100%);
+        height: 100%;
+        width: 280px;
+        position: absolute;
+        z-index: 1;
+        background-color: #343A40;
+        border-bottom-right-radius: 36px;
     }
     
-    .hours-info-container {
-        padding: 0 8px;
+    .logout-font {
+        color: white;
+    }
+
+    .profile-name-font {
+        color: white;
+    }
+    
+    .profile-title-font {
+        color: #bfbfbf;
+    }
+
+    .topic-title {
+        color: white;
+    }
+    
+    .topic-level {
+        color: #bfbfbf;
+    }
+    
+    .completion-font {
+        color: #bfbfbf;
     }
 }
 

@@ -160,16 +160,16 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    .middle-column-container {
-        margin: 16px 16px 0 16px;
+    .middle-column-outer {
+        height: 100%;
+        width: 100%;
     }
 
-    .classes-info-container {
-        padding: 0 8px;
-    }
-    
-    .hours-info-container {
-        padding: 0 8px;
+    .middle-column-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 24px 16px 0 16px;
     }
 }
 
