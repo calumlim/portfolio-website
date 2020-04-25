@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/stylesNavbar.css">
     <link rel="stylesheet" href="styles/stylesLeft.css">
     <link rel="stylesheet" href="styles/stylesMiddle.css">
     <link rel="stylesheet" href="styles/stylesRight.css">
@@ -19,10 +20,12 @@
                     <button class="open-left-col-button" onclick="openLeftColumnSidebar()">☰</button>
                 </div>
                 <div class="col-4 align-self-center center-align">
-                    <a class=" navbar-company-title" href="#">Learny</a>
+                    <a class="navbar-company-title" href="#">Learny</a>
                 </div>
                 <div class="col-4 align-self-center right-align">
-                    <button class="open-left-col-button" onclick="openLeftColumnSidebar()">Profile</button>
+                    <a href="javascript:void(0)" onclick="openRightColumnSidebar()">
+                        <img class="profile-picture-icon" src="images/profile_picture_icon.png">
+                    </a>
                 </div>
             </div>
 
@@ -171,7 +174,7 @@
                         </div>
 
                         <div class="profile-container">
-                            <img src="images/profile_picture_icon.png">
+                            <img src="images/profile_picture_hero.png">
                             <p id="profileName" class="profile-name-font"></p>
                             <p id="profileTitle" class="profile-title-font"></p>
                         </div>

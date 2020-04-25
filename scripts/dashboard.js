@@ -190,13 +190,15 @@ function createTopicRow(id) {
 }
 
 function openLeftColumnSidebar() {
-    console.log("hi")
     $('.left-column-outer').css("width", "280px")
 }
 
 function closeLeftColumnSidebar() {
-    console.log("hi")
     $('.left-column-outer').css("width", "0")
+}
+
+function openRightColumnSidebar() {
+    $('.left-column-outer').css("width", "280px")
 }
 
 $( document ).ready(function() {
