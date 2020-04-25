@@ -51,11 +51,6 @@
     transition: .3s;
 }
 
-.category-text-container a:hover {
-    text-decoration: none;
-    color: white;
-}
-
 @media only screen and (max-width: 991px) {
     .left-column-outer {
         height: 100%;
@@ -87,8 +82,8 @@
         color: white;
         padding: 3px 13px;
         border: 1px solid white;
-        transition-duration: 0.4s;
         margin-left: 20px;
+        transition-duration: 0.4s;
     }
     
     .open-left-col-button:hover {
@@ -124,6 +119,11 @@
     .company-font {
         color: white;
     }
+
+    .category-text-container a:hover {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -137,5 +137,14 @@
 
     .left-column-container {
         margin-top: 60px;
+    }
+
+    .left-column-outer {
+        width: 0;
+    }
+
+    .category-text-container a:hover {
+        text-decoration: none;
+        color: black;
     }
 }
