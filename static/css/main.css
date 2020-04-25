@@ -74,7 +74,7 @@ p {
 .btnLarge p, .btnLarge p:hover{
     font-weight: 200;
     color: var(--main-blue);
-    padding-top: 0.4em;
+    padding-top: 1em;
 }
 
 .appPreview {
@@ -189,14 +189,16 @@ nav a:not(:first-child) {
 
     .county-logo, .county-logo:hover {
         font-size: 25px;
+        margin-top: -5px;
     }
 
     .btnLarge {
-        height: 50px;
+        height: 40px;
         width: 200px;
+        padding-top: 0.2em;
     }
 
     .btnLarge p {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
