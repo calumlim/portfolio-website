@@ -65,7 +65,7 @@
 }
 
 .progress-bar-container {
-    height: 10px;
+    height: 3px;
     background-color: #E8E8E8;
     border-radius: 10px;
 }
@@ -100,13 +100,11 @@
     margin-top: 24px;
 }
 
-.classes-info-container {
-    padding: 0;
-}
-
-.hours-info-container {
-    padding: 0;
-    text-align: center;
+.classes-info-container .content {
+    padding: 28px;
+    box-shadow: 0px 0px 5px #00000029;
+    border-radius: 26px;
+    margin-right: 8px;
 }
 
 .info-title-font {
@@ -165,10 +163,20 @@
     color: #707070;
 }
 
+.hours-info-container .content {
+    height: 100%;
+    padding: 28px;
+    box-shadow: 0px 0px 5px #00000029;
+    border-radius: 26px;
+    margin-left: 8px;
+}
+
 .chart-container {
-    max-height: 350px;
-    height: 84%;
-    margin-top: 10%;
+    max-height: 70%;
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    bottom: 28px;
 }
 
 @media only screen and (max-width: 1199px) {

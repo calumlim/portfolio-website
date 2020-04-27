@@ -109,6 +109,7 @@ function drawHoursSpentChart() {
                 fill: true,
                 backgroundColor: gradientFill,
                 borderColor: '#9300FF',
+                borderWidth: '3px',
                 pointRadius: 0,
                 data: Object.values(user.hoursStudying)
             }
