@@ -76,8 +76,8 @@
 }
 
 .category-container:hover img {
-    -webkit-filter: brightness(200%);
-    filter: brightness(200%);
+    -webkit-filter: brightness(220%);
+    filter: brightness(220%);
 }
 
 .category-container:hover a {
