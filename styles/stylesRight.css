@@ -1,5 +1,6 @@
-.logout-container{
-    text-align: center;
+.logout-container {
+    height: 52px;
+    padding: 0 16px;
 }
 
 .logout-font {
@@ -7,7 +8,10 @@
     font-weight: 700;
     font-size: 15px;
     color: #707070;
-    width: 50%;
+}
+
+.logout-logo {
+    float: right;
 }
 
 .profile-container {
@@ -79,6 +83,15 @@
         background-color: #343A40;
         border-bottom-right-radius: 36px;
     }
+
+    .logout-logo {
+        transition: 0.3s;
+    }
+    
+    .logout-logo:hover {
+        -webkit-filter: brightness(220%);
+        filter: brightness(220%);
+    }
     
     .logout-font {
         color: white;
@@ -111,6 +124,6 @@
     }
 
     .right-column-container {
-        margin: 60px 0px 0 0px;
+        margin: 60px 16px 0 16px;
     }
 }
