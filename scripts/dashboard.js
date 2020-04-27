@@ -62,19 +62,24 @@ function fillWelcomeBackContainer() {
 
 function fillClassesList() {
     const keys = Object.keys(classes)
-    keys.forEach((unitName) => {
-        $("#classList").append(createClassRow(unitName))
+    keys.forEach((unitCode) => {
+        $("#classList").append(createClassRow(unitCode))
     })
 }
 
-function createClassRow(unitName) {
-    const title = classes[unitName].title
-    const progress = classes[unitName].progress + "%"
+function createClassRow(unitCode) {
+    const title = classes[unitCode].title
+    const progress = classes[unitCode].progress + "%"
     return (
         `<div class="class-info">
-            <div class="unit-name">
-                ${unitName} - ${title}
-            </div>
+            <p>
+                <span class="unit-code">
+                    ${unitCode} - 
+                </span>
+                <span class="unit-name">
+                    ${title}
+                </span>
+            </p>
             <div class="unit-progress-bar">
                 <div class="progress-bar-container">
                     <div class="progress-bar-fill-2" style="width:${progress}"></div>
