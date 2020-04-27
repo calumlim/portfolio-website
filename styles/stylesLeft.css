@@ -22,16 +22,31 @@
     text-align: right;
 }
 
+.left-column-outer {
+    height: 100%;
+}
+
+.left-column-container {
+    background-color: #2A2A2A;
+    height: 100%;
+    width: 80%;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 36px;
+}
+
 .company-font {
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 20px;
-    color: black;
+    color: white;
+    margin-bottom: 24px;
 }
 
 .category-container {
-    margin-top: 48px;
+    padding: 24px 0;
+    transition: .3s;
 }
 
 .category-icon-container {
@@ -42,18 +57,36 @@
     text-align: left;
 }
 
+.category-icon-container img {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
 .category-text-container a {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #707070;
     white-space: nowrap;
-    transition: .3s;
+    transition: .5s;
+}
+
+.category-container:hover {
+    background-color: #FF5757;
+}
+
+.category-container:hover img {
+    -webkit-filter: brightness(200%);
+    filter: brightness(200%);
+}
+
+.category-container:hover a {
+    text-decoration: none;
+    color: white;
 }
 
 @media only screen and (max-width: 1199px) {
     .left-column-outer {
-        height: 100%;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -63,12 +96,9 @@
     }
     
     .left-column-container {
-        height: 100%;
         width: 280px;
         position: absolute;
         z-index: 1;
-        background-color: #343A40;
-        border-bottom-left-radius: 36px;
     }
 
     .close-button-container {
@@ -88,15 +118,6 @@
         text-decoration: none;
         color: white;
     }
-    
-    .company-font {
-        color: white;
-    }
-
-    .category-text-container a:hover {
-        text-decoration: none;
-        color: white;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -109,15 +130,10 @@
     }
 
     .left-column-container {
-        margin-top: 60px;
+        padding-top: 60px;
     }
 
     .left-column-outer {
         width: 0;
-    }
-
-    .category-text-container a:hover {
-        text-decoration: none;
-        color: black;
     }
 }
