@@ -133,6 +133,10 @@
         display: none;
     }
 
+    .fill-container {
+        height: 100%;
+    }
+
     .left-column-container {
         padding-top: 60px;
     }
