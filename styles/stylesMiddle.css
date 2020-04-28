@@ -42,7 +42,7 @@
 
 .last-login-container {
     width: 50%;
-    text-align: center;
+    padding-left: 16px;
 }
 
 .welcome-back-font {
@@ -61,7 +61,7 @@
 
 .last-class-progress-bar {
     background-color: white !important;
-    margin: 0 28px;
+    margin-right: 28px;
 }
 
 .progress-bar-container {
@@ -87,6 +87,7 @@
     font-weight: 700;
     font-size: 12px;
     color: #707070;
+    margin-left: 50%;
 }
 
 .hero-container {
@@ -194,6 +195,10 @@
 }
 
 @media only screen and (max-width: 672px) {
+    .last-login-container {
+        text-align: center;
+    }
+
     .hero-container {
         display: none;
     }
@@ -202,5 +207,6 @@
 @media only screen and (min-width: 1200px) {
     .middle-column-container {
         margin-top: 60px;
+        margin-right: 32px;
     }
 }

@@ -180,7 +180,7 @@ function createTopicRow(id) {
     topic = user.topicProgress[id]
     return (
         `
-        <div class="topic-info">
+        <div class="topic-info-container">
             <p class="topic-title">${topic.title}</p>
             <p class="topic-level">${topic.level}</p>
             <div class="completion-font">
