@@ -526,6 +526,10 @@ nav a:not(:first-child) {
 /* Responsive --------------------------------------------------------------------------------------------------------*/
 /* FEATURES SECTION APP PREVIEW */
 @media (max-width: 1399px) {
+    .features-section .wrapper {
+        height: 1000px;
+    }
+    
     .features-info {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
@@ -533,7 +537,7 @@ nav a:not(:first-child) {
 
     .features-info .img-column .app-preview {
         position: absolute;
-        height: 80vh;
+        height: 800px;
         width: auto;
         left: 0vw;
     }
@@ -639,6 +643,10 @@ nav a:not(:first-child) {
 
     /* -------------------------------------------------------FEATURES SECTION ---------------------------------------------------- */
     
+    .features-section .wrapper {
+        height: 400px;
+    }
+
     .features-section .footer {
         display: none;
     }
@@ -729,6 +737,10 @@ nav a:not(:first-child) {
 @media (max-width: 700px) {
 
     /* ------------------------------------------------ FEATRUES SECTION ---------------------------------------- */
+    .features-section .wrapper {
+        height: 600px;
+    }
+    
     .features-info {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
