@@ -486,6 +486,11 @@ nav a:not(:first-child) {
         display: none;
     }
 
+    .features-info {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+    }
+
     .features-info .img-column .app-preview {
         display: none;
     }
@@ -528,6 +533,17 @@ nav a:not(:first-child) {
 
     .features-info .right-column .content p {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 700px) {
+    .features-info {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .features-info .feature-item {
+        padding-bottom: 65px;
     }
 }
 
