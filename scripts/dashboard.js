@@ -188,7 +188,7 @@ function createTopicRow(id) {
                 <p style="float:right">${topic.progress}</p>
             </div>
             <div class="progress-bar-container">
-                <div class="progress-bar-fill" style="width:${topic.progress}"></div>
+                <div class="progress-bar-fill-2" style="width:${topic.progress}"></div>
             </div>
         </div>
         `

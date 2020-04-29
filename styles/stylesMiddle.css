@@ -12,7 +12,7 @@
 .date-font {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 13px;
     color: #707070;
     text-align: center;
 }
@@ -42,7 +42,7 @@
 
 .last-login-container {
     width: 50%;
-    padding-left: 16px;
+    padding-left: 5%;
 }
 
 .welcome-back-font {
@@ -87,7 +87,8 @@
     font-weight: 700;
     font-size: 12px;
     color: #707070;
-    margin-left: 50%;
+    margin-left: 10%;
+    margin-top: 2px;
 }
 
 .hero-container {
