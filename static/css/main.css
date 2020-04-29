@@ -169,6 +169,10 @@ nav a:not(:first-child) {
     width: 100%;
     display: block;
     margin: 13% 0 0 0;
+    color: white;
+    text-decoration: none;
+    padding: 2rem 0 2rem 0;
+    transition: 0.3s;
 }
 
 #overlay a:first-child {
@@ -176,10 +180,14 @@ nav a:not(:first-child) {
     right: 0;
     margin: 20px 5% 0 0;
     font-size: 35px;
+    text-decoration: none;
+    color: white;
 }
 
-#overlay a:hover {
+#overlay a:not(:first-child):hover {
     font-weight: bold;
+    background-color: white;
+    color: var(--main-blue);
 }
 
 
@@ -365,6 +373,155 @@ nav a:not(:first-child) {
     width: 80%;
 }
 
+/* --------------------------------------------------- BLOG SECTION ---------------------------------------------- */
+.blog-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.blog-section .blog-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.blog-section .blog-desc {
+    font-weight: 400;
+    font-size: 18px;
+    color: #7A7A7A;
+    padding-top: 10px;
+}
+
+.blog-section .date-time {
+    display: grid;
+    grid-template-rows: auto auto;
+    position: relative;
+    margin-top: 20px
+}
+
+.blog-section .date-time .date-grid,  .blog-section .date-time .time-grid{
+    display: grid;
+    grid-template-columns: 30px auto;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.blog-section .view-article-grid {
+    display: grid;
+    grid-template-columns: auto 30px;
+    padding-right: 5px;
+    position: relative;
+    bottom: 20px;
+    align-items: center;
+}
+
+.blog-section .view-article-grid .text {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.blog-section .date-time .icon {
+    width: auto;
+    height: 18px;
+}
+
+.blog-section .date-time .text {
+    font-size: 15px;
+    color: #7A7A7A;
+    font-weight: 400;
+}
+
+.blog-section .view-article-grid .text {
+    color: var(--main-blue);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.blog-section .view-article-grid .icon {
+    width: auto;
+    height: 18px;
+}
+
+.blog-section .header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.blog-section .header .title {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.blog-section .header .rect {
+    width: 190px;
+    height: 12px;
+    background: #DFDFDF;
+    position: absolute;
+    margin-top: 12px;
+}
+
+.blog-main-grid {
+    height: 80%;
+    width: 90%;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-main-grid .main-article-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 6px;
+    background-color: white;
+    z-index: 1;
+    align-items: center;
+}
+
+.blog-main-grid .main-article-grid .img-child .featured-image{
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.blog-main-grid .main-article-grid .info-child {
+    padding: 2rem;
+    width: 90%;
+}
+
+.secondary-article-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 40px;
+    grid-gap: 1.5rem;
+}
+
+.secondary-article-grid .secondary-article {
+    padding: 2rem;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 6px;
+    background-color: white;
+    z-index: 1;
+}
+
+.blog-section .right-triangle {
+    width: 0;
+    height: 50vh;
+    border-top: 280px solid transparent;
+    border-left: 100vw solid var(--main-blue);
+    border-bottom: 0px solid transparent;
+    position: relative;
+    bottom: 50vh;
+    z-index: 0;
+}
 
 /* Responsive --------------------------------------------------------------------------------------------------------*/
 /* FEATURES SECTION APP PREVIEW */
@@ -534,9 +691,44 @@ nav a:not(:first-child) {
     .features-info .right-column .content p {
         font-size: 13px;
     }
+
+    /* ------------------------------------------------ BLOG SECTION ------------------------------------- */
+    .blog-section .blog-title {
+        font-size: 18px;
+    }
+
+    .blog-section .blog-desc {
+        font-size: 16px;
+    }
+
+    .blog-section .date-time .icon {
+        height: 15px;
+    }
+
+    .blog-section .date-time .text {
+        font-size: 14px;
+    }
+
+    .blog-section .view-article-grid .text {
+        font-size: 14px;
+    }
+
+    .blog-section .view-article-grid .icon {
+        height: 14px;
+    }
+
+    .blog-main-grid .main-article-grid {
+        grid-template-columns: 0 auto;
+    }
+    
+    .blog-main-grid .main-article-grid .img-child .featured-image{
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
+
+    /* ------------------------------------------------ FEATRUES SECTION ---------------------------------------- */
     .features-info {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
@@ -544,6 +736,56 @@ nav a:not(:first-child) {
 
     .features-info .feature-item {
         padding-bottom: 65px;
+    }
+
+    /* ------------------------------------------------- BLOG SECTION --------------------------------------------- */
+    .blog-section .secondary-article-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 2em;
+    }
+
+    .blog-section .blog-title {
+        font-size: 15px;
+    }
+
+    .blog-section .blog-desc {
+        display: none;
+    }
+
+    .blog-section .view-article-grid {
+        display: none;
+    }
+
+    .blog-section .date-time {
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        grid-gap: 1em;
+    }
+
+    .blog-section .date-time .icon {
+        height: 12px;
+    }
+
+    .blog-section .date-time .text {
+        font-size: 12px;
+    }
+
+    .blog-section .blog-main-grid .main-article-grid .info-child {
+        padding: 1rem;
+    }
+
+    .blog-section .secondary-article-grid {
+        margin-top: 1em;
+        padding-top: 1em;
+    }
+
+    .blog-section .blog-main-grid .secondary-article-grid .secondary-article{
+        padding: 1rem;
+    }
+
+    .blog-section .right-triangle {
+        border-top: 100px solid transparent;
     }
 }
 
