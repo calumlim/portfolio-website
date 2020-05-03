@@ -620,6 +620,50 @@ nav a:not(:first-child) {
     font-weight: 300;
 }
 
+.background-circle-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.larger-circle {
+    width:200px;
+    height: 200px;
+    background: #167FF6;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.smaller-circle {
+    width: 100px;
+    height: 100px;
+    background: #278CFF;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.background-circle-2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    left: 25vw;
+}
+
+.background-circle-2 .larger-circle {
+    width: 500px;
+    height: 500px;
+}
+
+.background-circle-2 .smaller-circle {
+    height: 250px;
+    width: 250px;
+}
+
 /* ------------------------------------------- FOOTER SECTION ----------------------------------------- */
 .footer-section {
     height: 20vh;
