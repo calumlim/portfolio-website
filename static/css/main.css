@@ -375,7 +375,7 @@ nav a:not(:first-child) {
 
 /* --------------------------------------------------- BLOG SECTION ---------------------------------------------- */
 .blog-section {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color: white;
 }
@@ -528,6 +528,7 @@ nav a:not(:first-child) {
     width: 100vw;
     display: flex;
     align-items: center;
+    padding-top: 50vh;
 }
 
 .contact-section .wrapper {
@@ -607,8 +608,8 @@ nav a:not(:first-child) {
     justify-content: flex-end;
 }
 .contact-section .form .btn .send-btn {
-    height: 70px;
-    width: 20vh;
+    height: 55px;
+    width: 200px;
     background-image: linear-gradient(257deg, #0066FF 0%, #00BBFF 100%);
     color: white;
     text-decoration: none;
@@ -618,6 +619,7 @@ nav a:not(:first-child) {
     border-radius: 5px;
     font-size: 16px;
     font-weight: 300;
+    transition: 0.5s;
 }
 
 .background-circle-1 {
@@ -943,6 +945,11 @@ nav a:not(:first-child) {
     .blog-main-grid .main-article-grid .img-child .featured-image{
         display: none;
     }
+
+    /* ------------------------------------------ CONTACT SECTION ------------------------------ */
+    .contact-section {
+        padding-top: 30vh;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1009,10 +1016,69 @@ nav a:not(:first-child) {
 
     .blog-section .right-triangle {
         border-top: 100px solid transparent;
+        bottom: 20vh;
+        height: 50vh;
+    }
+
+    /* ------------------------------------- CONTACT SECTION ------------------------------ */
+    .contact-section {
+        height: 80vh;
+        padding-top: 0;
+    }
+
+    .contact-section .form .input-fields .first-row {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+
+    .contact-section .form .btn .send-btn {
+        z-index: 2;
+    }
+
+    .contact-section .background-circle-1 .larger-circle{
+        height: 100px;
+        width: 100px;
+    }
+
+    .contact-section .background-circle-1 .smaller-circle {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* ----------------------------------- FOOTER SECTION ----------------------------------- */
+    .footer-section {
+        height: 30vh;
+    }
+
+    .footer-section .wrapper {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 2rem;
+    }
+
+    .footer-section .left-section {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section .right-section {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 2rem;
+    }
+
+    .footer-section .right-section .navigation {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section .right-section .social-media {
+        justify-content: center;
     }
 }
 
 @media (max-width: 615px){
+    /* ------------------------------------ LANDING -------------------------------------- */
     .appPreview {
         display: none;
     }
@@ -1023,5 +1089,30 @@ nav a:not(:first-child) {
 
     .about-info .content p {
         font-size: 0.8em;
+    }
+
+    /* ----------------------------------- CONTACT SECTION --------------------------------- */
+    .contact-section {
+         height: 150vh;
+         padding-top: 0;
+    }
+
+    .contact-section .form .header {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+
+    .contact-section .form .header .description-grid {
+        text-align: center;
+    }
+
+    .contact-section .form .header .description-grid .description {
+        font-size: 16px;
+    }
+
+    /* -------------------------------- FOOTER SECTION ------------------------------------- */
+    .footer-section {
+        height: 50vh;
     }
 }
