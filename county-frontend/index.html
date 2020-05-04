@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>County - Landing Page Preview</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="static/css/main.css">
+    <script type="text/javascript" src="static/js/nav.js"></script>
+    <script type="text/javascript" src="static/js/loader.js"></script>
+</head>
+<body class="">
+
+    <section class="popup">
+        <p>This is a preview of an example landing page.</p>
+        <div class="arrow"></div>
+    </section>
+
+    <div class="loader-wrapper">
+        <div class="loader">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <rect x="0" y="0" width="4" height="10" fill="#333">
+                    <animateTransform attributeType="xml"
+                        attributeName="transform" type="translate"
+                        values="0 0; 0 20; 0 0"
+                        begin="0" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+                <rect x="10" y="0" width="4" height="10" fill="#333">
+                    <animateTransform attributeType="xml"
+                        attributeName="transform" type="translate"
+                        values="0 0; 0 20; 0 0"
+                        begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+                <rect x="20" y="0" width="4" height="10" fill="#333">
+                    <animateTransform attributeType="xml"
+                        attributeName="transform" type="translate"
+                        values="0 0; 0 20; 0 0"
+                        begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+            </svg> 
+        </div>
+    </div>
+
+    <div id="overlay" class="close">
+        <a href="#" id="close">&#215</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Features">Features</a>
+        <a href="#Blog">Blog</a>
+        <a href="#ContactUs">Contact Us</a>
+    </div>
+
+    <!-- LANDING SECTION -->
+    <section class="wrapper" id="Home">
+        <nav>
+            <a href="#" class="county-logo animated fadeInLeft"><label for="county-logo">county</label></a>
+            <div class="desktop animated fadeInDown">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Features">Features</a>
+                <a href="#Blog">Blog</a>
+                <a href="#ContactUs">Contact Us</a>
+            </div>
+            <div class="mobile animated fadeInDown">
+                <a href="#" id="open">&#9776</a>
+            </div>
+        </nav>
+
+        <div class="landing">
+            <h2 class="animated fadeInLeft">Record your expenses</h2>
+            <h1 class="animated fadeInLeft">on-the-fly</h1>
+            <button class="btnLarge animated fadeInUp">Download now</button>
+            <div class="appPreview animated fadeIn">
+                <img src="static/img/app_preview.png" alt="App Preview" class="maintainRatio">
+            </div>
+        </div>
+    </section>
+    <section class="triangle-left"></section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="About">
+        <div class="wrapper">
+            <div class="about-info">
+                <img src="/static/img/pie-chart.svg" alt="pie-chart" class="about-img" data-aos="fade-right" data-aos-duration="1000" data-aos-once=true>
+                <div class="content" >
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" data-aos-once=true>What is</h2>
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" data-aos-once=true>county?</h1>
+                    <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000" data-aos-once=true>
+                        Lorem ipsum dolor sit amet, consetetur 
+                        sadipscing elitr, sed diam nonumy eirmod 
+                        tempor invidunt ut labore et dolore magna 
+                        aliquyam erat, sed diam voluptua. At vero eos 
+                        et accusam et justo duo dolores et ea rebum. 
+                        Stet clita kasd gubergren, no sea takimata 
+                        sanctus est Lorem ipsum dolor sit amet. 
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section" id="Features">
+        <div class="wrapper">
+            <div class="features-info">
+                <div class="left-column">
+                    <div class="feature-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0" data-aos-once=true>
+                        <div class="icon-wrapper">
+                            <img src="/static/img/icons/Icon ionic-ios-rocket.svg" alt="fast-and-powerful" class="icon">
+                        </div>
+                        <div class="content">
+                            <h2>Fast & Powerful</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" data-aos-once=true>
+                        <div class="icon-wrapper">
+                            <img src="/static/img/icons/Icon feather-book-open.svg" alt="readable-layout" class="icon">
+                        </div>
+                        <div class="content">
+                            <h2>Readable Layout</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-column">
+                    <div class="header" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0" data-aos-once=true>
+                        <h2 >Features</h2>
+                        <div class="rect"></div>
+                    </div>
+                    <img src="/static/img/app_preview.png" alt="app-preview" class="app-preview" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200" data-aos-once=true>
+                </div>
+                <div class="right-column">
+                    <div class="feature-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" data-aos-once=true>
+                        <div class="icon-wrapper">
+                            <img src="/static/img/icons/Icon ionic-ios-stats.svg" alt="useful-statistics" class="icon">
+                        </div>
+                        <div class="content">
+                            <h2>Useful Statistics</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" data-aos-once=true>
+                        <div class="icon-wrapper">
+                            <img src="/static/img/icons/Icon feather-cloud.svg" alt="cloud-storage" class="icon">
+                        </div>
+                        <div class="content">
+                            <h2>Cloud Storage</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-section" id="Blog">
+        <div class="wrapper">
+            <div class="header" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0" data-aos-once=true>
+                <h2 class="title">Recent Blog Posts</h2>
+                <div class="rect"></div>
+            </div>
+
+            <div class="blog-main-grid">
+                <div class="main-article-grid" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once=true>
+                    <div class="img-child">
+                        <img src="/static/img/stock-market.png" alt="" class="featured-image">
+                    </div>
+                    
+                    <div class="info-child">
+                        <h2 class="blog-title">Stock market crash causes massive panic amongst public</h2>
+                        <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+
+                        <div class="date-time">
+                            <div class="date-grid">
+                                <img src="/static/img/icons/calendar.svg" alt="" class="icon">
+                                <p class="text">19.04.2020</p>
+                            </div>
+                            <div class="time-grid">
+                                <img src="/static/img/icons/clock.svg" alt="" class="icon">
+                                <p class="text">2.47p.m</p>
+                            </div>
+                        </div>
+
+                        <div class="view-article-grid">
+                            <p class="text">VIEW ARTICLE</p>
+                            <img src="/static/img/icons/arrow-right.svg" alt="" class="icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="secondary-article-grid">
+                    <div class="secondary-article" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once=true>
+                        <h2 class="blog-title">3 Things to Watch in the Stock Market This Week</h2>
+                        <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <div class="date-time">
+                            <div class="date-grid">
+                                <img src="/static/img/icons/calendar.svg" alt="" class="icon">
+                                <p class="text">19.04.2020</p>
+                            </div>
+                            <div class="time-grid">
+                                <img src="/static/img/icons/clock.svg" alt="" class="icon">
+                                <p class="text">2.47p.m</p>
+                            </div>
+                        </div>
+
+                        <div class="view-article-grid">
+                            <p class="text"></p>
+                            <img src="/static/img/icons/arrow-right.svg" alt="" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="secondary-article" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once=true>
+                        <h2 class="blog-title">Bursa Malaysia and Shenzen stock exchange ...</h2>
+                        <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <div class="date-time">
+                            <div class="date-grid">
+                                <img src="/static/img/icons/calendar.svg" alt="" class="icon">
+                                <p class="text">19.04.2020</p>
+                            </div>
+                            <div class="time-grid">
+                                <img src="/static/img/icons/clock.svg" alt="" class="icon">
+                                <p class="text">2.47p.m</p>
+                            </div>
+                        </div>
+
+                        <div class="view-article-grid">
+                            <p class="text"></p>
+                            <img src="/static/img/icons/arrow-right.svg" alt="" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="secondary-article" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once=true>
+                        <h2 class="blog-title">Malaysia Stock Market Poised To Rebound On ...</h2>
+                        <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <div class="date-time">
+                            <div class="date-grid">
+                                <img src="/static/img/icons/calendar.svg" alt="" class="icon">
+                                <p class="text">19.04.2020</p>
+                            </div>
+                            <div class="time-grid">
+                                <img src="/static/img/icons/clock.svg" alt="" class="icon">
+                                <p class="text">2.47p.m</p>
+                            </div>
+                        </div>
+
+                        <div class="view-article-grid">
+                            <p class="text"></p>
+                            <img src="/static/img/icons/arrow-right.svg" alt="" class="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-triangle"></div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="ContactUs">
+        <div class="wrapper">
+            <div class="form">
+                <div class="header">
+                    <h2 class="company-name">county</h2>
+                    <div class="description-grid">
+                        <p class="description">Have something to ask us?</p>
+                        <p class="description">Ask away!</p>
+                    </div>
+                </div>
+
+                <div class="input-fields"  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0" data-aos-once=true>
+                    <div class="first-row">
+                        <input type="text" class="input-style name" placeholder="Full name">
+                        <input type="text" class="input-style email" placeholder="Email">
+                    </div>
+                    <input type="text" class="input-style subject" placeholder="Subject">
+                    <textarea type="text" class="input-style message" placeholder="Enter a message..."></textarea>
+                </div>
+                <div class="btn" data-aos="fade" data-aos-duration="1000" data-aos-delay="1000" data-aos-once=true>
+                    <a href="#" class="send-btn">
+                        Send message
+                    </a>
+                    <div class="background-circle-1">
+                        <div class="larger-circle"></div>
+                        <div class="smaller-circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-circle-2">
+                <div class="larger-circle"></div>
+                <div class="smaller-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer-section" id="Footer">
+        <div class="wrapper">
+            <div class="left-section">
+                <h2 class="company-name">county</h2>
+                <p class="copyright">COPYRIGHT ©2020 ALL RIGHTS RESERVED</p>
+            </div>
+
+            <div class="right-section">
+                <div class="navigation">
+                    <div class="nav-grid">
+                        <a href="#Home" class="links">Home</a>
+                        <a href="#About" class="links">About</a>
+                        <a href="#Features" class="links">Features</a>
+                    </div>
+                    <div class="nav-grid">
+                        <a href="#Blog" class="links">Blog</a>
+                        <a href="#" class="links">Articles</a>
+                        <a href="#ContactUs" class="links">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <img src="/static/img/icons/instagram.svg" alt="instagram">
+                    <img src="/static/img/icons/pinterest.svg" alt="pinterest">
+                    <img src="/static/img/icons/facebook.svg" alt="facebook">
+                    <img src="/static/img/icons/twitter.svg" alt="twitter">
+                    <img src="/static/img/icons/youtube.svg" alt="youtube">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
