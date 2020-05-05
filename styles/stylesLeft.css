@@ -2,7 +2,7 @@
     position: relative;
     background: #FAFAFA 0% 0% no-repeat padding-box;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .center-align {

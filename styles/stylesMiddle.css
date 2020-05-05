@@ -195,6 +195,20 @@
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .hours-info-container {
+        margin-top: 12px;
+        height: 360px;
+    }
+
+    .hours-info-container .content {
+        padding: 28px;
+        box-shadow: 0px 0px 5px #00000029;
+        border-radius: 26px;
+        margin-left: 0px;
+    }
+}
+
 @media only screen and (max-width: 672px) {
     .last-login-container {
         text-align: center;

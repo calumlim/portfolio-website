@@ -213,17 +213,21 @@ function closeRightColumnSidebar() {
     $('.right-column-outer').css("width", "0")
 }
 
+function resizeDashboardHeight() {
+    let win = $(this); // this = window
+    if (win.height() < 868) {
+        let htmlHeight = $(document).height()
+        $(".dashboard-container").css("height", htmlHeight)
+    }
+    else {
+        $(".dashboard-container").css("height", "100vh")
+    }
+}
+
 /* Handle window resize function */
 function handleWindowResize() {
     $(window).on('resize', function() {
-        let win = $(this); // this = window
-        if (win.height() < 868) {
-            let htmlHeight = $(document).height()
-            $(".dashboard-container").css("height", htmlHeight)
-        }
-        else {
-            $(".dashboard-container").css("height", "100vh")
-        }
+        resizeDashboardHeight()
     });
 }
 
@@ -233,6 +237,7 @@ function render() {
     drawHoursSpentChart()
     fillProfileInfo()
     fillTopicList()
+    resizeDashboardHeight()
 }
 
 /* Init function */
