@@ -1,10 +1,3 @@
-html, body {
-    min-height: 100%;
-    height: 100%;
-    overflow: auto;
-    position: relative;
-}
-
 .dashboard-container {
     overflow: auto;
     position: relative;
@@ -19,10 +12,6 @@ html, body {
 
 .right-align {
     text-align: right;
-}
-
-.left-column-outer {
-    height: 100%;
 }
 
 .left-column-container {
@@ -87,6 +76,10 @@ html, body {
 }
 
 @media only screen and (max-width: 1199px) {
+    .fill-container {
+        height: calc(100% - 56px);
+    }
+
     .left-column-outer {
         position: absolute;
         top: 0;
@@ -122,6 +115,10 @@ html, body {
 }
 
 @media only screen and (min-width: 1200px) {
+    .fill-container {
+        height: 100%
+    }
+
     .top-navbar {
         display: none;
     }
