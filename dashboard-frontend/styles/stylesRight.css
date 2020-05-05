@@ -1,0 +1,148 @@
+.logout-container {
+    height: 52px;
+    padding: 60px 16px;
+}
+
+.logout-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #707070;
+}
+
+.logout-font:hover {
+    font-weight: 800;
+}
+
+.logout-logo {
+    float: right;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-container .add-icon {
+    position: relative;
+    bottom: -65px;
+    right: 50px;
+
+}
+
+.profile-name-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.profile-title-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #707070;
+    margin-top: -18px;
+}
+
+.topics-completion-container {
+    margin: 32px 16px 0 16px;
+}
+
+.topic-info-container {
+    box-shadow: 0px 0px 5px #00000029;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 36px;
+}
+
+.topic-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: black;
+}
+
+.topic-level {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #707070;
+    margin: 0;
+}
+
+.completion-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #707070;
+    margin: 0 0 20px 0;
+    padding-bottom: 2px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .right-column-outer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 0;
+        transition: width 1s;
+    }
+
+    .right-column-container {
+        height: 100%;
+        width: 280px;
+        position: absolute;
+        z-index: 1;
+        background-color: #2A2A2A;
+        padding: 1rem;
+    }
+
+    .logout-logo {
+        transition: 0.3s;
+    }
+    
+    .logout-logo:hover {
+        -webkit-filter: brightness(220%);
+        filter: brightness(220%);
+    }
+    
+    .logout-font {
+        color: white;
+    }
+
+    .profile-name-font {
+        color: white;
+    }
+    
+    .profile-title-font {
+        color: #bfbfbf;
+    }
+
+    .topic-title {
+        color: white;
+    }
+    
+    .topic-level {
+        color: #bfbfbf;
+    }
+    
+    .completion-font {
+        color: #bfbfbf;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .right-column-outer {
+        width: 0px;
+    }
+
+    .right-column-container {
+        box-shadow: 0px 0px 5px #00000029;
+        height: 100%;
+        margin-left: 20px;
+        padding: 1rem;
+    }
+}

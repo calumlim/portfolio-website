@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/stylesNavbar.css">
+    <link rel="stylesheet" href="styles/stylesLeft.css">
+    <link rel="stylesheet" href="styles/stylesMiddle.css">
+    <link rel="stylesheet" href="styles/stylesRight.css">
+
+    <script src="/scripts/pace.js"></script>
+    <link rel="stylesheet" href="/styles/pace-simple.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="dashboard-container">
+
+        <div class="row no-gutters top-navbar">
+            <div class="col-4 align-self-center">
+                <button class="open-left-col-button" onclick="openLeftColumnSidebar()">☰</button>
+            </div>
+            <div class="col-4 align-self-center center-align">
+                <a class="navbar-company-title" href="#">Learny</a>
+            </div>
+            <div class="col-4 align-self-center right-align">
+                <a href="javascript:void(0)" onclick="openRightColumnSidebar()">
+                    <img class="profile-picture-icon" src="images/profile_picture_icon.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="row no-gutters fill-container">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-12 col-xl-2 left-column-outer">
+                <div id="leftColumn" class="left-column-container">
+
+                    <div class="close-button-container">
+                        <a href="javascript:void(0)" class="close-button" onclick="closeLeftColumnSidebar()">×</a>
+                    </div>
+
+                    <div class="row no gutters">
+                        <div class="col-11 center-align">
+                            <img src="images/udemy_icon.png" alt="Icon Here" class="animated fadeIn">
+                        </div>
+                    </div>
+
+                    <div class="row no gutters">
+                        <div class="col-11 center-align">
+                            <p class="company-font animated fadeIn">Learny</p>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters category-container animated fadeInUp delay-1s">
+                        <div class="col-4 category-icon-container">
+                            <img src="images/navbar_icons/01-dashboard-icon.svg">
+                        </div>
+                        <div class="category-text-container col-8">
+                            <a href="#">Dashboard</a>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters category-container animated fadeInUp delay-1s">
+                        <div class="col-4 category-icon-container">
+                            <img src="images/navbar_icons/02-classes-icon.svg">
+                        </div>
+                        <div class="category-text-container col-8">
+                            <a href="#">Classes</a>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters category-container animated fadeInUp delay-1s">
+                        <div class="col-4 category-icon-container">
+                            <img src="images/navbar_icons/03-resources-icon.svg">
+                        </div>
+                        <div class="category-text-container col-8">
+                            <a href="#">Resources</a>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters category-container animated fadeInUp delay-1s">
+                        <div class="col-4 category-icon-container">
+                            <img src="images/navbar_icons/04-learning-planning-icon.svg">
+                        </div>
+                        <div class="category-text-container col-8">
+                            <a href="#">Learning Plan</a>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters category-container animated fadeInUp delay-1s">
+                        <div class="col-4 category-icon-container">
+                            <img src="images/navbar_icons/05-chat-icon.svg">
+                        </div>
+                        <div class="category-text-container col-8">
+                            <a href="#">Chat</a>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters category-container animated fadeInUp delay-1s">
+                        <div class="col-4 category-icon-container">
+                            <img src="images/navbar_icons/06-settings-icon.svg">
+                        </div>
+                        <div class="category-text-container col-8">
+                            <a href="#">Settings</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MIDDLE COLUMN -->
+            <div class="col-12 col-xl-7 middle-column-outer">
+                <div class="middle-column-container">
+
+                    <div class="row header-container animated fadeInDown delay-1s">
+                        <div class="col-4 align-self-center">
+                            <div class="dashboard-font">Dasbboard</div>
+                        </div>
+                        <div class="col-4 align-self-center center-align">
+                            <div class="date-font">22 April 2020, Tuesday</div>
+                        </div>
+                        <div class="col-4 align-self-center right-align">
+                            <div>
+                                <img class="search-icon" src="images/search_icon.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="welcome-back-container animated fadeInDown delay-1s">
+                        <tr>
+                            <td class="last-login-container">
+                                <p id="welcomeBack" class="welcome-back-font"></p>
+                                <p id="lastClassUnit" class="last-class-font"></p>
+                                <div class="progress-bar-container last-class-progress-bar">
+                                    <div id="lastClassProgressBar" class="progress-bar-fill"></div>
+                                </div>
+                                <p id="progressPercentage" class="percentage-font"></p>
+                            </td>
+                            
+                            <td class="hero-container">
+                                <img src="images/hero.png">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="middle-bottom-half-container row no-gutters">
+
+                        <div class="col-12 col-sm-6 classes-info-container animated fadeInUp delay-1s">
+                            <div class="content">
+                                <span class="info-title-font">Classes</span>
+                                <span class="more-classes-container">
+                                    <a href="#" class="more-classes-font">More ></a>
+                                </span>
+
+                                <div id="classList" class="class-list-container"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 hours-info-container animated fadeInUp delay-1s">
+                            <div class="content">
+                                <div class="info-title-font">
+                                    Hours spent on learning past week
+                                </div>
+                                <div class="chart-container">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-12 col-xl-3 right-column-outer">
+                <div class="right-column-container">
+
+                    <div class="close-button-container">
+                        <a href="javascript:void(0)" class="close-button" onclick="closeRightColumnSidebar()">×</a>
+                    </div>
+
+                    <div class="logout-container animated fadeInDown delay-1s">
+                        <span class="logout-font">Logout</span>
+                        <span class="logout-logo">
+                            <img src="images/logout_icon.png">
+                        </span>
+                    </div>
+
+                    <div class="profile-container  animated fadeInUp delay-1s">
+                        <img src="images/profile_picture_hero.svg" class="profile-icon">
+                        <img src="images/add-icon.svg" alt="" class="add-icon">
+                        <p id="profileName" class="profile-name-font"></p>
+                        <p id="profileTitle" class="profile-title-font"></p>
+                    </div>
+
+                    <div id="topicList" class="topics-completion-container animated fadeInUp delay-1s"></div>
+
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script src="scripts/dashboard.js" type="text/javascript"></script>
+</html>
