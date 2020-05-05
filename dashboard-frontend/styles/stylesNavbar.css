@@ -1,0 +1,43 @@
+.top-navbar {
+    height: 56px;
+    background-color: #2A2A2A; 
+}
+
+.open-left-col-button {
+    font-size: 20px;
+    background-color: #343A40;
+    color: white;
+    padding: 3px 13px;
+    border: 1px solid white;
+    margin-left: 20px;
+    transition-duration: 0.4s;
+}
+
+.open-left-col-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar-company-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-company-title:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.profile-picture-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+}
+
+.profile-picture-icon:hover {
+    background-color: #666666;
+}
