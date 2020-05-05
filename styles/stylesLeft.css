@@ -1,9 +1,8 @@
 .dashboard-container {
-    overflow: auto;
     position: relative;
     background: #FAFAFA 0% 0% no-repeat padding-box;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .center-align {
@@ -76,10 +75,6 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    .fill-container {
-        height: calc(100% - 56px);
-    }
-
     .left-column-outer {
         position: absolute;
         top: 0;

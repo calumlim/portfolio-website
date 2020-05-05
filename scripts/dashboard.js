@@ -195,6 +195,8 @@ function createTopicRow(id) {
     )
 }
 
+
+/* Handle event for, open and close left and right side menus */
 function openLeftColumnSidebar() {
     $(".left-column-outer").css("width", "280px")
 }
@@ -211,10 +213,30 @@ function closeRightColumnSidebar() {
     $('.right-column-outer').css("width", "0")
 }
 
-$( document ).ready(function() {
+/* Handle window resize function */
+function handleWindowResize() {
+    $(window).on('resize', function() {
+        let win = $(this); // this = window
+        if (win.height() < 868) {
+            let htmlHeight = $(document).height()
+            $(".dashboard-container").css("height", htmlHeight)
+        }
+        else {
+            $(".dashboard-container").css("height", "100vh")
+        }
+    });
+}
+
+function render() {
     fillWelcomeBackContainer()
     fillClassesList()
     drawHoursSpentChart()
     fillProfileInfo()
     fillTopicList()
+}
+
+/* Init function */
+$( document ).ready(function() {
+    render()
+    handleWindowResize()
 })
