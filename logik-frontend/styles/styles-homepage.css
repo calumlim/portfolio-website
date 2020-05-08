@@ -1,0 +1,10 @@
+.homepage-container {
+    height: 1000px;
+}
+
+/* --- MEDIA QUERIES ---*/
+@media only screen and (max-width: 575px) {
+    .homepage-container {
+        margin-top: 44px;
+    }
+}
