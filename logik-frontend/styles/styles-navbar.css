@@ -4,22 +4,27 @@
     width: 100%;
     position: fixed;
     background: transparent;
+    z-index: 1;
+}
+
+.navibar-desktop .navtitle-container {
+    padding-left: 6%;
 }
 
 .navibar-desktop .navlinks-container {
-    margin-right: 20px;
+    margin-right: 7%;
 }
 
 .navibar-desktop .navlinks-container a {
-    margin-right: 20px;
+    margin-right: 44px;
     text-decoration: none;
 }
 
-.navibar-desktop .navlinks-container h2 {
+.navibar-desktop .navlinks-container p {
     transition: 0.3s;
 }
 
-.navibar-desktop .navlinks-container h2:hover {
+.navibar-desktop .navlinks-container p:hover {
     color: black;
     opacity: 1;
 }
@@ -32,6 +37,12 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 6px #00000029;
     margin-top: -100px; /* hide menu at first */
+    z-index: 1;
+}
+
+.navibar-mobile .navtitle-container {
+    margin-top: 20px;
+    text-align: center;
 }
 
 .navibar-mobile .navlinks-container {
@@ -40,15 +51,15 @@
 
 .navibar-mobile .navlinks-container a {
     display: block;
-    padding-top: 20px;
+    padding-top: 18px;
     text-decoration: none;
 }
 
-.navibar-mobile .navlinks-container h2 {
+.navibar-mobile .navlinks-container p {
     transition: 0.3s;
 }
 
-.navibar-mobile .navlinks-container h2:hover {
+.navibar-mobile .navlinks-container p:hover {
     color: black;
     opacity: 1;
 }
@@ -71,11 +82,6 @@
 .navbutton-container button:hover {
     background-color: black;
     color: white;
-}
-
-.navtitle-container {
-    margin-top: 20px;
-    text-align: center;
 }
 
 /* --- MEDIA QUERIES ---*/

@@ -8,9 +8,11 @@ function handleScroll() {
   $(window).scroll(function() {
     if ($(window).scrollTop() < 100) {
       $('.navibar-desktop').css('box-shadow','none')
+      $('.navibar-desktop').css('background', 'transparent')
     }
     else {
       $('.navibar-desktop').css('box-shadow','0px 3px 6px #00000029')
+      $('.navibar-desktop').css('background', 'white')
     }
   })
 }
