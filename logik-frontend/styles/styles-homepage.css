@@ -3,24 +3,6 @@
     overflow: hidden;
 }
 
-.circle {
-    border-radius: 60%;
-    position: absolute;
-    opacity: 50%;
-}
-
-.circle-red {
-    background-color: #FF5D58;
-}
-
-.circle-yellow {
-    background-color: #F8D15B;
-}
-
-.circle-green {
-    background-color: #47BDB7;
-}
-
 .homepage-container .row {
     flex-direction: row-reverse; /* Start from R-L */
 }
@@ -46,29 +28,12 @@
 
 
 /* --- MEDIA QUERIES ---*/
+
+/* MOBILE */
 @media only screen and (max-width: 575px) {
     .homepage-container {
         margin-top: 44px;
         height: 600px;
-    }
-
-    .circle {
-        height: 100px;
-        width: 100px;
-    }
-
-    .circle-red {
-        left: 83%;
-        top: -8%;
-    }
-    
-    .circle-yellow {
-        left: -17%;
-        top: 78%;
-    }
-    
-    .circle-green {
-        display: none;
     }
 
     .hero-icon {
@@ -95,29 +60,40 @@
     }  
 }
 
-@media only screen and (min-width: 576px) {
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
     .homepage-container {
-        height: 768px;
+        height: 980px;
     }
 
-    .circle {
-        height: 200px;
-        width: 200px;
+    .hero-icon {
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 40px;
     }
 
-    .circle-red {
-        left: 90%;
-        top: -80px;
+    .hero-icon .mobile {
+        display: none;
     }
-    
-    .circle-yellow {
-        left: -5%;
-        top: calc(768px - 139px);
+
+    .homepage-info .content {
+        margin-left: 8%;
+        margin-right: 8%;
     }
-    
-    .circle-green {
-        left: 50%;
-        top: 50%;
+
+    .homepage-info .content *{
+        margin-top: 10px;
+    }
+
+    .getstarted-button-container button {
+        font-size: 14px;
+    }
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1200px) and (max-width: 1366px){
+    .homepage-container {
+        height: 830px;
     }
 
     .hero-icon .mobile {
@@ -126,6 +102,7 @@
 
     .homepage-container .row {
         height: 100%;
+        padding-bottom: calc(830px - 766px);
     }
 
     .homepage-info .content {
@@ -141,29 +118,10 @@
     }  
 }
 
+/* DESKTOP */
 @media only screen and (min-width: 1367px) {
     .homepage-container {
-        height: 979px;
-    }
-
-    .circle {
-        height: 200px;
-        width: 200px;
-    }
-
-    .circle-red {
-        left: 92vw;
-        top: -80px;
-    }
-    
-    .circle-yellow {
-        left: -5%;
-        top: calc(979px - 139px); /* 840px; */
-    }
-    
-    .circle-green {
-        left: 47%;
-        top: 380px;
+        height: 1044px;
     }
 
     .hero-icon .mobile {
@@ -172,6 +130,7 @@
 
     .homepage-container .row {
         height: 100%;
+        padding-bottom: calc(1044px - 962px);
     }
 
     .homepage-info .content {
