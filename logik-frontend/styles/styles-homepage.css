@@ -9,7 +9,6 @@
 
 .getstarted-button-container {
     position: absolute;
-    z-index: 1;
 }
 
 .getstarted-button-container button {
