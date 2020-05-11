@@ -1,0 +1,48 @@
+.square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 25%;
+}
+
+.square--yellow {
+    background-color: #F8D15B;
+}
+
+.square--green {
+    background-color: #47BDB7;
+}
+
+/* --- MEDIA QUERIES ---*/
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+
+}
+
+/* LAPTOP AND DESKTOP */
+@media only screen and (min-width: 1200px) {
+    .square--yellow--1 {
+        top: -20px;
+        right: 8%;
+    }
+    
+    .square--yellow--2 {
+        top: 40px;
+        right: 15%;
+    }
+    
+    .square--green--1 {
+        top: -20px;
+        left: 0%;
+    }
+    
+    .square--green--2 {
+        top: 40px;
+        left: 8%;
+    }
+}

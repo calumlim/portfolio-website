@@ -1,0 +1,71 @@
+.about-content--1, .about-content--2 {
+    height: 50%;
+}
+
+.about-content--1 .row, .about-content--2 .row{
+    height: 100%;
+}
+
+/* --- MEDIA QUERIES ---*/
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+
+}
+
+/* LAPTOP AND DESKTOP */
+@media only screen and (min-width: 1200px) {
+    .aboutpage-container {
+        height: 708px;
+    }
+
+    .aboutpage-container .about-icon img {
+        width: 360px;
+    }
+
+    /* -- Content 1 -- */
+    .about-content--1 .about-icon {
+        padding-left: 6%;
+    }
+
+    .about-content--1 .about-description {
+        text-align: right;
+        padding-right: 7%;
+    }
+
+    .about-content--1 .about-description p {
+        padding-top: 12px;
+        padding-left: 43%;
+    }
+
+    /* -- Content 2 -- */
+    .about-content--2 .row {
+        flex-direction: row-reverse; /* Start from R-L */
+    }
+
+    .about-content--2 .about-icon {
+        text-align: right;
+        padding-right: 13%;
+    }
+
+    .about-content--2 .about-description {
+        text-align: left;
+        padding-left: 3.5%;
+    }
+
+    .about-content--2 .about-description p {
+        padding-top: 12px;
+        padding-right: 25%;
+    }
+}
+
+/* DESKTOP SCREEN SIZE */
+@media only screen and (min-width: 1367px) {
+    .aboutpage-container {
+        height: 916px;
+    }
+}

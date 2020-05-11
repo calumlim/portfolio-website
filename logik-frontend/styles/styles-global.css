@@ -47,6 +47,10 @@ p {
     opacity: 0.5;
 }
 
+.about-description p {
+    opacity: 1;
+}
+
 /* --- MEDIA QUERIES ---*/
 @media only screen and (max-width: 575px) {
     h1 {
