@@ -16,16 +16,36 @@
 /* --- MEDIA QUERIES ---*/
 /* MOBILE */
 @media only screen and (max-width: 575px) {
-
+    .square--yellow, .square--green {
+        display: none;
+    }
 }
 
 /* TABLET */
 @media only screen and (min-width: 576px) and (max-width: 1199px) {
-
+    .square--yellow--1 {
+        top: -20px;
+        right: 1%;
+    }
+    
+    .square--yellow--2 {
+        top: 40px;
+        right: 15%;
+    }
+    
+    .square--green--1 {
+        top: -20px;
+        left: 1%;
+    }
+    
+    .square--green--2 {
+        top: 40px;
+        left: 15%;
+    }
 }
 
 /* LAPTOP AND DESKTOP */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     .square--yellow--1 {
         top: -20px;
         right: 8%;
