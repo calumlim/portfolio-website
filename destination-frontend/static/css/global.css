@@ -55,7 +55,7 @@ body {
 .content-container {
     width: 545px;
     height: 400px;
-    z-index: 2;
+    z-index: 16;
     position: absolute;
     bottom: 0;
     margin-left: 100px;
@@ -94,15 +94,15 @@ body {
     font-size: 16px;
     font-style: italic;
     padding-left: 25px;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .content-container .btn-style {
     height: 50px;
-    width: 163px;
+    width: 180px;
     border: 1px solid white;
     margin-left: 25px;
-    margin-top: 20px;
+    margin-top: 30px;
     transition: ease-in-out, 0.4s;
     color: white;
 }
@@ -123,4 +123,15 @@ body {
 
 a:hover {
     text-decoration: none;
+}
+
+.rating-icon-wrapper {
+    padding-left: 25px;
+    margin-top: -10px;
+}
+
+.rating-icon-wrapper .rating-icon {
+    height: 21px;
+    width: auto;
+    padding-right: 14px;
 }
