@@ -80,6 +80,12 @@ p {
     opacity: 0.5;
 }
 
+h5 {
+    font-weight: 500;
+    color: #075E63;
+    opacity: 1;
+}
+
 /* --- MEDIA QUERIES ---*/
 @media only screen and (max-width: 575px) {
     h1 {
@@ -121,6 +127,10 @@ p {
     ::-moz-placeholder {
         font-size: 12px;
     }
+
+    h5 {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 576px) {
@@ -158,5 +168,9 @@ p {
     
     ::-moz-placeholder {
         font-size: 16px;
+    }
+
+    h5 {
+        font-size: 14px;
     }
 }
