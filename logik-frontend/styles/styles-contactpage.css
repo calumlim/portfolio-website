@@ -1,0 +1,109 @@
+.contactpage-container .row {
+    height: 100%;
+}
+
+.connect-container .content {
+    padding: 12px;
+}
+
+.indent {
+    margin-left: 40px;
+    margin-bottom: 24px;
+}
+
+input[type=personal-info], select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px #00000029;
+    border: none;
+}
+
+input[type=message], select {
+    width: 100%;
+    height: 320px;
+    padding: 11px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px #00000029;
+    border: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    float: right;
+    background-color: #47BDB7;
+    border: none;
+    color: white;
+    padding: 16px 42px;
+    margin-top: 20px;
+}
+
+/* --- MEDIA QUERIES ---*/
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+    .contactpage-container {
+        height: 568px;
+    }
+
+    input[type=personal-info], select {
+        padding: 11px;
+        margin-top: 12px;
+    }
+    
+    input[type=message], select {
+        height: 192px;
+        padding: 11px;
+        margin-top: 12px;
+    }
+    
+    input[type=button], input[type=submit], input[type=reset] {
+        float: right;
+        background-color: #47BDB7;
+        border: none;
+        color: white;
+        font-size: 14px;
+        padding: 12px 36px;
+        margin-top: 18px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+    .contactpage-container {
+        height: 800px;
+    }
+
+    .connect-container {
+        width: 348px;
+        height: 516px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+    .contactpage-container {
+        height: 800px;
+    }
+
+    .connect-container {
+        width: 348px;
+        height: 516px;
+        margin-left: auto; 
+        margin-right: 24px;
+    }
+}
+
+/* DESKTOP SCREEN SIZE */
+@media only screen and (min-width: 1367px) {
+    .contactpage-container {
+        height: 916px;
+    }
+
+    .connect-container {
+        width: 348px;
+        height: 516px;
+        margin-left: auto; 
+        margin-right: 24px;
+    }
+}

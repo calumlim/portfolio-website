@@ -25,12 +25,12 @@
     }
 
     .circle--red {
-        left: 83%;
+        right: -50px;
         top: -8%;
     }
     
     .circle--yellow {
-        left: -17%;
+        left: -50px;
         top: 78%;
     }
     
@@ -39,21 +39,21 @@
     }
 }
 
-/* TABLET */
-@media only screen and (min-width: 576px) and (max-width: 1199px){
+/* TABLET, LAPTOP, AND DESKTOP */
+@media only screen and (min-width: 576px) {
     .circle {
         height: 200px;
         width: 200px;
     }
 
     .circle--red {
-        left: 90%;
+        right: -50px;
         top: -80px;
     }
     
     .circle--yellow {
-        left: -12%;
-        top: 780px;
+        left: -70px;
+        bottom: 30px;
     }
     
     .circle--green {
@@ -64,21 +64,6 @@
 
 /* LAPTOP */
 @media only screen and (min-width: 1200px) and (max-width: 1366px) {
-    .circle {
-        height: 200px;
-        width: 200px;
-    }
-
-    .circle--red {
-        left: 90%;
-        top: -80px;
-    }
-    
-    .circle--yellow {
-        left: -5%;
-        top: calc(768px - 139px);
-    }
-    
     .circle--green {
         left: 46.6%;
         top: 260px;
@@ -87,21 +72,6 @@
 
 /* DESKTOP */
 @media only screen and (min-width: 1367px) {
-    .circle {
-        height: 200px;
-        width: 200px;
-    }
-
-    .circle--red {
-        left: 92vw;
-        top: -80px;
-    }
-    
-    .circle--yellow {
-        left: -5%;
-        top: calc(979px - 139px); /* 840px; */
-    }
-    
     .circle--green {
         left: 47.3%;
         top: 370px;

@@ -48,7 +48,8 @@
 /* TABLET */
 @media only screen and (min-width: 576px) and (max-width: 1199px) {
     .aboutpage-container {
-        height: 660px;
+        padding-top: 60px;
+        height: 830px;
     }
 
     /* -- Content 1 -- */
@@ -79,7 +80,8 @@
 /* LAPTOP AND DESKTOP */
 @media only screen and (min-width: 1200px) {
     .aboutpage-container {
-        height: 708px;
+        padding-top: 60px;
+        height: 768px;
     }
 
     .aboutpage-container .about-icon img {
@@ -125,6 +127,6 @@
 /* DESKTOP SCREEN SIZE */
 @media only screen and (min-width: 1367px) {
     .aboutpage-container {
-        height: 916px;
+        height: 982px;
     }
 }

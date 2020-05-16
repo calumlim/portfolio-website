@@ -51,6 +51,35 @@ p {
     opacity: 1;
 }
 
+
+::-webkit-input-placeholder {
+    color: #000000;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.5;
+}
+  
+:-ms-input-placeholder {
+    color: #000000;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.5;
+}
+  
+:-moz-placeholder {
+    color: #000000;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.5;
+}
+  
+::-moz-placeholder {
+    color: #000000;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
 /* --- MEDIA QUERIES ---*/
 @media only screen and (max-width: 575px) {
     h1 {
@@ -71,6 +100,26 @@ p {
 
     p {
         font-size: 10px;
+    }
+
+    .contactpage-container h2 {
+        font-size: 15px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+    
+    :-ms-input-placeholder {
+        font-size: 12px;
+    }
+    
+    :-moz-placeholder {
+        font-size: 12px;
+    }
+    
+    ::-moz-placeholder {
+        font-size: 12px;
     }
 }
 
@@ -93,5 +142,21 @@ p {
 
     p {
         font-size: 14px;
+    }
+  
+    ::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+    
+    :-ms-input-placeholder {
+        font-size: 16px;
+    }
+    
+    :-moz-placeholder {
+        font-size: 16px;
+    }
+    
+    ::-moz-placeholder {
+        font-size: 16px;
     }
 }
