@@ -19,4 +19,8 @@ function handleScroll() {
 
 $(document).ready(function() {
   handleScroll()
+  console.log(window.innerWidth)
+  console.log(window.outerWidth)
+  console.log(window.innerHeight)
+  console.log(window.outerHeight)
 });

@@ -86,6 +86,12 @@ h5 {
     opacity: 1;
 }
 
+h3 {
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
 /* --- MEDIA QUERIES ---*/
 @media only screen and (max-width: 575px) {
     h1 {
@@ -131,6 +137,10 @@ h5 {
     h5 {
         font-size: 12px;
     }
+
+    h3 {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 576px) {
@@ -171,6 +181,10 @@ h5 {
     }
 
     h5 {
+        font-size: 14px;
+    }
+
+    h3 {
         font-size: 14px;
     }
 }
