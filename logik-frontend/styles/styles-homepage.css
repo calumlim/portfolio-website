@@ -1,0 +1,144 @@
+.homepage-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage-container .row {
+    flex-direction: row-reverse; /* Start from R-L */
+}
+
+.getstarted-button-container {
+    position: absolute;
+}
+
+.getstarted-button-container button {
+    border: none;
+    background-color: #FF5D58;
+    color: #FFFFFF;
+    font-size: 15px;
+    transition: 0.4s;
+    padding: 15px 40px;
+}
+
+.getstarted-button-container button:hover {
+    background-color: #47BDB7;
+    color: white;
+}
+
+/* --- MEDIA QUERIES ---*/
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+    .homepage-container {
+        margin-top: 44px;
+        height: 600px;
+    }
+
+    .hero-icon {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .hero-icon .desktop {
+        display: none;
+    }
+
+    .homepage-info .content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .homepage-info .content *{
+        margin-top: 4px;
+    }
+
+    .getstarted-button-container button {
+        font-size: 10px;
+    }  
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+    .homepage-container {
+        height: 980px;
+    }
+
+    .hero-icon {
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
+
+    .hero-icon .mobile {
+        display: none;
+    }
+
+    .homepage-info .content {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .homepage-info .content *{
+        margin-top: 10px;
+    }
+
+    .getstarted-button-container button {
+        font-size: 14px;
+    }
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1200px) and (max-width: 1366px){
+    .homepage-container {
+        height: 830px;
+    }
+
+    .hero-icon .mobile {
+        display: none;
+    }
+
+    .homepage-container .row {
+        height: 100%;
+        padding-bottom: calc(830px - 766px);
+    }
+
+    .homepage-info .content {
+        margin-left: 14%;
+    }
+
+    .homepage-info .content *{
+        margin-top: 10px;
+    }
+
+    .getstarted-button-container button {
+        font-size: 14px;
+    }  
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1367px) {
+    .homepage-container {
+        height: 1044px;
+    }
+
+    .hero-icon .mobile {
+        display: none;
+    }
+
+    .homepage-container .row {
+        height: 100%;
+        padding-bottom: calc(1044px - 962px);
+    }
+
+    .homepage-info .content {
+        margin-left: 14%;
+    }
+
+    .homepage-info .content *{
+        margin-top: 10px;
+    }
+
+    .getstarted-button-container button {
+        font-size: 14px;
+    }  
+}

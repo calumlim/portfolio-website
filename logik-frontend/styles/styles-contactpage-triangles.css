@@ -1,0 +1,87 @@
+.triangle {
+    position: absolute;
+    opacity: 0.25;
+}
+
+/* --- MEDIA QUERIES ---*/
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+    .triangle--yellow {
+        width: 0;
+        height: 0;
+        border-top: 50px solid #F8D15B;
+        border-left: 50px solid transparent;
+        right: 12px;
+    }
+
+    .triangle--red {
+        width: 0;
+        height: 0;
+        border-bottom: 22px solid #FF5D58;
+        border-right: 22px solid transparent;
+        bottom: 0px;
+    }
+
+    .triangle--green {
+        width: 0;
+        height: 0;
+        border-bottom: 180px solid #47BDB7;
+        border-right: 180px solid transparent;
+        bottom: 0px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+    .triangle--yellow {
+        width: 0;
+        height: 0;
+        border-top: 94px solid #F8D15B;
+        border-left: 94px solid transparent;
+        right: 0px;
+    }
+
+    .triangle--red {
+        width: 0;
+        height: 0;
+        border-bottom: 58px solid #FF5D58;
+        border-right: 58px solid transparent;
+        bottom: 0px;
+    }
+
+    .triangle--green {
+        width: 0;
+        height: 0;
+        border-bottom: 200px solid #47BDB7;
+        border-right: 200px solid transparent;
+        bottom: 0px;
+    }
+}
+
+/* LAPTOP AND DESKTOP */
+@media only screen and (min-width: 1024px) {
+    .triangle--yellow {
+        width: 0;
+        height: 0;
+        border-top: 94px solid #F8D15B;
+        border-left: 94px solid transparent;
+        right: 0px;
+    }
+
+    .triangle--red {
+        width: 0;
+        height: 0;
+        border-bottom: 58px solid #FF5D58;
+        border-right: 58px solid transparent;
+        bottom: 0px;
+    }
+
+    .triangle--green {
+        width: 0;
+        height: 0;
+        border-bottom: 200px solid #47BDB7;
+        border-right: 200px solid transparent;
+        bottom: 0px;
+    }
+}
+

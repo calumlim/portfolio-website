@@ -1,0 +1,132 @@
+.about-content--1, .about-content--2 {
+    height: 50%;
+}
+
+.about-content--1 .row, .about-content--2 .row{
+    height: 100%;
+}
+
+/* --- MEDIA QUERIES ---*/
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+    .aboutpage-container {
+        padding-top: 44px;
+        height: 580px;
+    }
+
+    .aboutpage-container .about-icon img {
+        width: 150px;
+    }
+
+    .col-xl-1 {
+        display: none;
+    }
+
+    /* -- Content 1 -- */
+    .about-content--1 .about-icon {
+        text-align: center;
+    }
+
+    .about-content--1 .about-description {
+        text-align: right;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    /* -- Content 2 -- */
+    .about-content--2 .about-icon {
+        text-align: center;
+    }
+
+    .about-content--2 .about-description {
+        text-align: left;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+    .aboutpage-container {
+        padding-top: 60px;
+        height: 830px;
+    }
+
+    /* -- Content 1 -- */
+    .about-content--1 .about-icon {
+        padding-left: 3%;
+    }
+
+    .about-content--1 .about-description {
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    /* -- Content 2 -- */
+    .about-content--2 .row {
+        flex-direction: row-reverse; /* Start from R-L */
+    }
+
+    .about-content--2 .about-icon {
+        text-align: right;
+        padding-right: 3%;
+    }
+
+    .about-content--2 .about-description {
+        padding-left: 5%;
+    }
+}
+
+/* LAPTOP AND DESKTOP */
+@media only screen and (min-width: 1200px) {
+    .aboutpage-container {
+        padding-top: 60px;
+        height: 768px;
+    }
+
+    .aboutpage-container .about-icon img {
+        width: 360px;
+    }
+
+    /* -- Content 1 -- */
+    .about-content--1 .about-icon {
+        padding-left: 6%;
+    }
+
+    .about-content--1 .about-description {
+        text-align: right;
+        padding-right: 7%;
+    }
+
+    .about-content--1 .about-description p {
+        padding-top: 12px;
+        padding-left: 43%;
+    }
+
+    /* -- Content 2 -- */
+    .about-content--2 .row {
+        flex-direction: row-reverse; /* Start from R-L */
+    }
+
+    .about-content--2 .about-icon {
+        text-align: right;
+        padding-right: 13%;
+    }
+
+    .about-content--2 .about-description {
+        text-align: left;
+        padding-left: 3.5%;
+    }
+
+    .about-content--2 .about-description p {
+        padding-top: 12px;
+        padding-right: 25%;
+    }
+}
+
+/* DESKTOP SCREEN SIZE */
+@media only screen and (min-width: 1367px) {
+    .aboutpage-container {
+        height: 982px;
+    }
+}

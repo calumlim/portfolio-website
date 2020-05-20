@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles-global.css">
+    <link rel="stylesheet" href="styles/styles-navbar.css">
+    <link rel="stylesheet" href="styles/styles-homepage.css">
+    <link rel="stylesheet" href="styles/styles-homepage-circles.css">
+    <link rel="stylesheet" href="styles/styles-aboutpage.css">
+    <link rel="stylesheet" href="styles/styles-aboutpage-squares.css">
+    <link rel="stylesheet" href="styles/styles-contactpage.css">
+    <link rel="stylesheet" href="styles/styles-contactpage-triangles.css">
+    <link rel="stylesheet" href="styles/styles-footer.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <title>Logik</title>
+</head>
+
+<body>
+
+    <div class="container-fluid padding-0">
+
+        <!-- NAVBAR FOR MOBILE -->
+        <div class="navibar-mobile">
+
+            <div class="navlinks-container">
+                <a href="#HomeSection">
+                    <p class="navlink-font">Home</p>
+                </a>
+                <a href="#AboutSection">
+                    <p class="navlink-font">About</p>
+                </a>
+                <a href="#ContactSection">
+                    <p class="navlink-font">Contact</p>
+                </a>
+            </div>
+
+            <div class="navbutton-container">
+                <button onclick="expandNavbarMenu()">
+                    ☰
+                </button>
+            </div>
+
+            <div class="navtitle-container">
+                <h1>Logik</h1>
+            </div>
+        </div>
+
+        <!-- NAVBAR FOR DESKTOP -->
+        <div class="navibar-desktop row no-gutters">
+            <div class="offset-xl-1 col-4 align-self-center navtitle-container">
+                <h1>Logik</h1>
+            </div>
+
+            <div class="col-7 col-xl-5 align-self-center">
+                <div class="row no-gutters float-right navlinks-container">
+                    <a href="#HomeSection">
+                        <p class="navlink-font">Home</p>
+                    </a>
+                    <a href="#AboutSection">
+                        <p class="navlink-font">About</p>
+                    </a>
+                    <a href="#ContactSection">
+                        <p class="navlink-font">Contact</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOME PAGE -->
+        <div id="HomeSection" class="homepage-container">
+
+            <div class="circle circle--red"></div>
+            <div class="circle circle--yellow"></div>
+            <div class="circle circle--green"></div>
+
+            <div class="row no-gutters align-items-center">
+
+                <div class="col-12 col-xl-6">
+                    <div class="hero-icon">
+                        <img class="mobile" src="images/hero-icon-mobile.svg">
+                        <img class="desktop" src="images/hero-icon-desktop.svg">
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-5 homepage-info">
+                    <div class="content">
+                        <h6>
+                            TRUSTED BY MILLIONS
+                        </h6>
+                        <h2>
+                            Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua.
+                        </p>
+                        <div class="getstarted-button-container">
+                            <button>
+                                GET STARTED
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="AboutSection" class="aboutpage-container">
+
+            <div class="about-content--1">
+                <div class="row no-gutters">
+
+                    <div class="offset-xl-1 col-12 col-md-6 col-xl-4 about-icon align-self-center">
+                        <img src="images/about-icon-01.svg">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-5 about-description align-self-center">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore 
+                            et dolore magna aliqua.
+                        </p>
+                        <div class="square square--yellow square--yellow--1"></div>
+                        <div class="square square--yellow square--yellow--2"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="about-content--2">
+                <div class="row no-gutters">
+
+                    <div class="col-xl-1"></div>
+                    <div class="col-12 col-md-6 col-xl-5 about-icon align-self-center">
+                        <img src="images/about-icon-02.svg">
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-4 about-description align-self-center">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore 
+                            et dolore magna aliqua.
+                        </p>
+                        <div class="square square--green square--green--1"></div>
+                        <div class="square square--green square--green--2"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div id="ContactSection" class="contactpage-container">
+            <div class="row no-gutters">
+
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="connect-container">
+
+                        <div class="triangle triangle--yellow"></div>
+                        <div class="triangle triangle--red"></div>
+
+                        <div class="content">
+                            <h2>Talk to us!</h2>
+                            <h2 class="indent">We won't bite!</h2>
+
+                            <form action="/action_page.php">
+                                <input type="personal-info" placeholder="What's your name?">
+                                <input type="personal-info" placeholder="What's your email address?">
+                                <input type="message" placeholder="Tell us anything!">
+                            
+                                <input type="submit" value="Bon Voyage!">
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="socialmds-container">
+                        
+                        <div class="triangle triangle--green"></div>
+                        <div class="hero-icon--2">
+                            <img src="images/hero-icon-2.svg">
+                        </div>
+                        
+                        <div class="row no-gutters">
+                            <img src="images/social-phone-icon.svg">
+                            <div class="align-self-center">
+                                <h5>+(60) 12 3456 2133</h5>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <img src="images/social-email-icon.svg">
+                            <div class="align-self-center">
+                                <h5>support@logikmy.com</h5>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <img src="images/social-facebook-icon.svg">
+                            <div class="align-self-center">
+                                <h5>@logikmy</h5>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <img src="images/social-twitter-icon.svg">
+                            <div class="align-self-center">
+                                <h5>@logikmy</h5>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <img src="images/social-instagram-icon.svg">
+                            <div class="align-self-center">
+                                <h5>@logikmy</h5>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="row no-gutters">
+
+                <div class="col-12 col-sm-6 align-self-center text">
+                    <h3>© 2020 Logik</h3>
+                </div>
+
+                <div class="col-12 col-sm-6 align-self-center text">
+                    <h3>@logik.my on Instagram and Twitter.</h3>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+<script src="scripts/logik.js"></script>
+</html>

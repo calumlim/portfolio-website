@@ -1,0 +1,79 @@
+.circle {
+    border-radius: 60%;
+    position: absolute;
+    opacity: 50%;
+}
+
+.circle--red {
+    background-color: #FF5D58;
+}
+
+.circle--yellow {
+    background-color: #F8D15B;
+}
+
+.circle--green {
+    background-color: #47BDB7;
+}
+
+/* --- MEDIA QUERIES ---*/
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+    .circle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .circle--red {
+        right: -50px;
+        top: -8%;
+    }
+    
+    .circle--yellow {
+        left: -50px;
+        top: 78%;
+    }
+    
+    .circle--green {
+        display: none;
+    }
+}
+
+/* TABLET, LAPTOP, AND DESKTOP */
+@media only screen and (min-width: 576px) {
+    .circle {
+        height: 200px;
+        width: 200px;
+    }
+
+    .circle--red {
+        right: -50px;
+        top: -80px;
+    }
+    
+    .circle--yellow {
+        left: -70px;
+        bottom: 30px;
+    }
+    
+    .circle--green {
+        left: 30%;
+        top: 180px;
+    }
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+    .circle--green {
+        left: 46.6%;
+        top: 260px;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1367px) {
+    .circle--green {
+        left: 47.3%;
+        top: 370px;
+    }
+}

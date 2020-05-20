@@ -1,0 +1,98 @@
+.navibar-desktop {
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background: transparent;
+    z-index: 1;
+}
+
+.navibar-desktop .navtitle-container {
+    padding-left: 6%;
+}
+
+.navibar-desktop .navlinks-container {
+    margin-right: 7%;
+}
+
+.navibar-desktop .navlinks-container a {
+    margin-right: 44px;
+    text-decoration: none;
+}
+
+.navibar-desktop .navlinks-container p {
+    transition: 0.3s;
+}
+
+.navibar-desktop .navlinks-container p:hover {
+    color: black;
+    opacity: 1;
+}
+
+.navibar-mobile {
+    height: 144px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px #00000029;
+    margin-top: -100px; /* hide menu at first */
+    z-index: 1;
+}
+
+.navibar-mobile .navtitle-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navibar-mobile .navlinks-container {
+    text-align: center;
+}
+
+.navibar-mobile .navlinks-container a {
+    display: block;
+    padding-top: 18px;
+    text-decoration: none;
+}
+
+.navibar-mobile .navlinks-container p {
+    transition: 0.3s;
+}
+
+.navibar-mobile .navlinks-container p:hover {
+    color: black;
+    opacity: 1;
+}
+
+.navbutton-container {
+    margin-top: 18px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbutton-container button {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.navbutton-container button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* --- MEDIA QUERIES ---*/
+@media only screen and (max-width: 575px) {
+    .navibar-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .navibar-mobile {
+        display: none;
+    }
+}
